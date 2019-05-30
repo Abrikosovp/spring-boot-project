@@ -1,0 +1,8 @@
+<th:block xmlns:th="http://www.thymeleaf.org" th:fragment="authentication(frag)">
+
+    <form th:action="@{|/${frag}|}" method="post">
+        <div><label>User Name: <input type="text" name="username" placeholder="User name"></label></div>
+        <div><label>Password:<input type="password" name="password" placeholder="Password"></label></div>
+        <div><input type="submit" value="Sing In"></div>
+    </form>
+</th:block>

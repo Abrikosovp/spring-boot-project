@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<th:block th:if="${message != null}">
+    <div  th:text="${message}"></div>
+</th:block>
+
+Registration
+<th:block th:replace="~{frabments/_authentication :: authentication('registration')}"></th:block>
+
+</body>
+</html>
